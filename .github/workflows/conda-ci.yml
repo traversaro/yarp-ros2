@@ -32,9 +32,9 @@ jobs:
       shell: bash -l {0}
       run: |
         # Compilation related dependencies
-        mamba install cmake compilers make ninja pkg-config
+        conda install cmake compilers make ninja pkg-config
         # Actual dependencies
-        mamba install -c conda-forge -c robostack-experimental ycm-cmake-modules eigen ace ros-${{ matrix.ros_distro }}-ros-base ros-galactic-test-msgs
+        conda install -c conda-forge -c robostack-experimental ycm-cmake-modules eigen ace ros-${{ matrix.ros_distro }}-ros-base ros-galactic-test-msgs
 
 
     - name: Download YARP [Linux&macOS]
