@@ -34,7 +34,7 @@ jobs:
         # Compilation related dependencies
         mamba install cmake compilers make ninja pkg-config
         # Actual dependencies
-        mamba install -c conda-forge -c robostack-experimental ycm-cmake-modules eigen ace ros-${{ matrix.ros_distro }}-ros-base ros-galactic-test-msgs
+        mamba install -c conda-forge -c robostack-experimental ycm-cmake-modules eigen ace ros-${{ matrix.ros_distro }}-ros-base ros-galactic-test-msgs numpy
 
 
     - name: Download YARP [Linux&macOS]
